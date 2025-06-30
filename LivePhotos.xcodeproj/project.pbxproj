@@ -25,24 +25,28 @@
 
 /* Begin PBXFileReference section */
 		F151DEC62E11CB1300B8920F /* LivePhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivePhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F151DED82E11CB1600B8920F /* LivePhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivePhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F151DEE22E11CB1600B8920F /* LivePhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivePhotosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F151DED82E11CB1600B8920F /* LivePhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = LivePhotosTests.xctest; path = "/Users/anu/Desktop/Olorin/Apps Stage 2/LivePhotos/build/Debug-iphoneos/LivePhotos.app/PlugIns/LivePhotosTests.xctest"; sourceTree = "<absolute>"; };
+		F151DEE22E11CB1600B8920F /* LivePhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = LivePhotosUITests.xctest; path = "/Users/anu/Desktop/Olorin/Apps Stage 2/LivePhotos/build/Debug-iphoneos/LivePhotosUITests-Runner.app/PlugIns/LivePhotosUITests.xctest"; sourceTree = "<absolute>"; };
+		F151DF082E13140100B8920F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F151DEFE2E11EEB100B8920F /* Exceptions for "LivePhotos" folder in "LivePhotos" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F151DEC52E11CB1300B8920F /* LivePhotos */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F151DEC82E11CB1300B8920F /* LivePhotos */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F151DEFE2E11EEB100B8920F /* Exceptions for "LivePhotos" folder in "LivePhotos" target */,
+			);
 			path = LivePhotos;
-			sourceTree = "<group>";
-		};
-		F151DEDB2E11CB1600B8920F /* LivePhotosTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LivePhotosTests;
-			sourceTree = "<group>";
-		};
-		F151DEE52E11CB1600B8920F /* LivePhotosUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LivePhotosUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,10 +79,9 @@
 		F151DEBD2E11CB1300B8920F = {
 			isa = PBXGroup;
 			children = (
-				F151DEC82E11CB1300B8920F /* LivePhotos */,
-				F151DEDB2E11CB1600B8920F /* LivePhotosTests */,
-				F151DEE52E11CB1600B8920F /* LivePhotosUITests */,
+				F151DF072E1313D200B8920F /* Git */,
 				F151DEC72E11CB1300B8920F /* Products */,
+				F151DEC82E11CB1300B8920F /* LivePhotos */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,10 +89,16 @@
 			isa = PBXGroup;
 			children = (
 				F151DEC62E11CB1300B8920F /* LivePhotos.app */,
-				F151DED82E11CB1600B8920F /* LivePhotosTests.xctest */,
-				F151DEE22E11CB1600B8920F /* LivePhotosUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F151DF072E1313D200B8920F /* Git */ = {
+			isa = PBXGroup;
+			children = (
+				F151DF082E13140100B8920F /* .gitignore */,
+			);
+			path = Git;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,9 +139,6 @@
 			dependencies = (
 				F151DEDA2E11CB1600B8920F /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				F151DEDB2E11CB1600B8920F /* LivePhotosTests */,
-			);
 			name = LivePhotosTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +158,6 @@
 			);
 			dependencies = (
 				F151DEE42E11CB1600B8920F /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				F151DEE52E11CB1600B8920F /* LivePhotosUITests */,
 			);
 			name = LivePhotosUITests;
 			packageProductDependencies = (
@@ -399,6 +402,7 @@
 				DEVELOPMENT_TEAM = QVDQ798FK9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LivePhotos/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +432,7 @@
 				DEVELOPMENT_TEAM = QVDQ798FK9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LivePhotos/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

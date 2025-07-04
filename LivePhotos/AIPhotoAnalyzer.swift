@@ -12,7 +12,7 @@ class AIPhotoAnalyzer: ObservableObject {
     @Published var isAnalyzing: Bool = false
     @Published var error: String?
     
-    private let openAIAPIKey = "" // Replace with your API key
+    private let openAIAPIKey = "TEST_MODE" // Replace with your API key
     
     func analyzePhoto(_ image: UIImage, prompt: String = "What do you see in this image? Describe the main objects and their details.") {
         guard !openAIAPIKey.isEmpty else {
@@ -23,6 +23,14 @@ class AIPhotoAnalyzer: ObservableObject {
         isAnalyzing = true
         error = nil
         analysisResult = ""
+        
+        if openAIAPIKey == "TEST_MODE" {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                self.isAnalyzing = false
+                self.analysisResult = "This is a test analysis result. The image appears to show a sample object for testing the audio playback functionality."
+            }
+            return
+        }
         
         // Convert image to base64
         guard let imageData = image.jpegData(compressionQuality: 0.8) else {

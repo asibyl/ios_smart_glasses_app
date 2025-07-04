@@ -24,9 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F128C6632E1820B3005193FF /* LivePhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivePhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F128C6642E1820B3005193FF /* LivePhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivePhotosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F151DEC62E11CB1300B8920F /* LivePhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivePhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F151DED82E11CB1600B8920F /* LivePhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = LivePhotosTests.xctest; path = "/Users/anu/Desktop/Olorin/Apps Stage 2/LivePhotos/build/Debug-iphoneos/LivePhotos.app/PlugIns/LivePhotosTests.xctest"; sourceTree = "<absolute>"; };
-		F151DEE22E11CB1600B8920F /* LivePhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = LivePhotosUITests.xctest; path = "/Users/anu/Desktop/Olorin/Apps Stage 2/LivePhotos/build/Debug-iphoneos/LivePhotosUITests-Runner.app/PlugIns/LivePhotosUITests.xctest"; sourceTree = "<absolute>"; };
 		F151DF082E13140100B8920F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				F151DEC62E11CB1300B8920F /* LivePhotos.app */,
+				F128C6632E1820B3005193FF /* LivePhotosTests.xctest */,
+				F128C6642E1820B3005193FF /* LivePhotosUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,7 +145,7 @@
 			packageProductDependencies = (
 			);
 			productName = LivePhotosTests;
-			productReference = F151DED82E11CB1600B8920F /* LivePhotosTests.xctest */;
+			productReference = F128C6632E1820B3005193FF /* LivePhotosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		F151DEE12E11CB1600B8920F /* LivePhotosUITests */ = {
@@ -163,7 +165,7 @@
 			packageProductDependencies = (
 			);
 			productName = LivePhotosUITests;
-			productReference = F151DEE22E11CB1600B8920F /* LivePhotosUITests.xctest */;
+			productReference = F128C6642E1820B3005193FF /* LivePhotosUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */

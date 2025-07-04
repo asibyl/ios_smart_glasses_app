@@ -8,6 +8,7 @@
 	<string>This app can save received photos to your photo library.</string>
 	<key>UIBackgroundModes</key>
 	<array>
+		<string>audio</string>
 		<string>bluetooth-central</string>
 	</array>
 </dict>
